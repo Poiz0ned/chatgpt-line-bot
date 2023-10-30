@@ -79,7 +79,6 @@ def handle_message(event) -> None:
 
     reply_token = event.reply_token
     user_id = event.source.user_id
-    display_name = line_bot_api.get_profile(user_id).display_name # user name
     response = None
 
     # Get user sent message
